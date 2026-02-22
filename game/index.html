@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missile Command Clone</title>
+    <style>
+        body { margin: 0; }
+        canvas { display: block; }
+        #score { position: absolute; top: 10px; left: 10px; color: white; font-family: Arial; }
+        #highScores { position: absolute; top: 10px; right: 10px; color: white; font-family: Arial; }
+        #gameOver { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-family: Arial; text-align: center; display: none; }
+    </style>
+</head>
+<body>
+    <div id="score">Score: 0</div>
+    <div id="highScores"></div>
+    <div id="gameOver">
+        <h1>Game Over</h1>
+        <p>Your Score: <span id="finalScore"></span></p>
+        <input type="text" id="initials" maxlength="3" placeholder="Initials">
+        <button onclick="saveScore()">Save</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
